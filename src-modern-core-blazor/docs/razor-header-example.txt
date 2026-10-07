@@ -1,0 +1,24 @@
+@*
+    ============================================================================
+    COMPONENT: AdvancedSearchDropdown
+    DESCRIPTION: A searchable, debounced dropdown control with virtualization for large datasets.
+    
+    INTEGRATION & USAGE:
+    - Parent Container: Standalone or within an EditForm context.
+    - Render Mode: Supports InteractiveServer and InteractiveWebAssembly.
+    
+    KEY PARAMETERS:
+    - Items (IEnumerable<TItem>): The data source to filter and display. Required.
+    - SearchFields (string[]): Properties on TItem to execute text search against.
+    - DebounceMs (int): Delay in milliseconds before filtering triggers. Default: 300.
+    
+    EVENTS & CALLBACKS:
+    - OnItemSelected (EventCallback<TItem>): Fires immediately when a user selects an option.
+    - OnSearchCleared (EventCallback): Fires when the user clears the input box.
+    
+    AI PROMPT ASSISTANCE NOTE: 
+    This control manages its own internal open/closed state but relies on 
+    LpVirtualize for layout. When generating markup for this control, always 
+    provide a generic TItem type explicitly in the razor tag.
+    ============================================================================
+*@
